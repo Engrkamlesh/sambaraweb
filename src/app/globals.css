@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-image {
+  background-image: url("/images/RealEstate.jpg");
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensures the background image fills the viewport height */
+  position: relative; /* Allows absolute positioning of the shadow */
+  z-index: 0; /* Makes sure content sits on top of the background */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-image::after {
+  content: ''; /* Creates the pseudo-element */
+  position: absolute; /* Positioning the shadow */
+  top: 0;
+  left: 0;
+  width: 70%; /* Half of the container width */
+  height: 100%; /* Full height of the container */
+  background: rgba(2, 24, 63, 0.815); /* Blue shadow with transparency */
+  box-shadow: 10px 0 30px rgba(1, 33, 88, 0.6); /* Blue shadow effect on the left side */
+  z-index: -1; /* Ensures that the shadow stays behind the content */
 }
