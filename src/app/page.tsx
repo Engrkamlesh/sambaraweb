@@ -3,6 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
 import ServiceCard from "@/components/Service/OurServices";
 import ServicesCards from "@/components/Service/ServicesSection";
+import Technology from "@/components/Technology/Technology";
 
 
 const servicesData  = [
@@ -67,9 +68,10 @@ export default function main() {
           reverse={index % 2 !== 0} // Alternate the layout
         />
       ))}
+       
     </div>
      
-      
+      <Technology/>
       {/* <ServicesSection/> */}
    <Footer/> 
      </>

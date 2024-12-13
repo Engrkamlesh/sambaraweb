@@ -13,6 +13,7 @@ reverse?: boolean; // To determine if the layout should be reversed
 // Component to render individual service details
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc, reverse =false}) => {
   return (
+    <>
     <section className="relative pt-12 bg-blueGray-50 my-8">
        <div className={`flex justify-between flex-wrap items-center gap-2 ${reverse ? "flex-row-reverse" : ""}`}>
         {/* Image Section */}
@@ -50,7 +51,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc,
           </ul> */}
         </div>
       </div>
+
     </section>
+    
+    </>
   );
 };
 
