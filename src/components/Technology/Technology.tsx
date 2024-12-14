@@ -1,61 +1,29 @@
-import React from 'react';
+import Image from "next/image";
 
-const Technology = () => {
-  return (
-    <div className="flex flex-col items-center space-y-6 mt-8">
-      <h2 className="text-4xl font-bold text-center">Technologies We Work With</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/technologies/html-icon.svg" 
-            alt="HTML Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">HTML</h3>
+const technologies = [
+  { name: 'HTML', icon: '/technologies/html-icon.svg' },
+  { name: 'JavaScript', icon: '/technologies/javascript-icon.svg' },
+  { name: 'TypeScript', icon: '/technologies/typescript-icon.svg' },
+  { name: 'React', icon: '/technologies/react-icon.svg' },
+  { name: 'Next.js', icon: '/technologies/nextjs-icon.svg' },
+  { name: 'Flutter', icon: '/technologies/flutter-icon.svg' },
+];
+
+const Technology = () => (
+  <div className="flex flex-col items-center space-y-6 mt-8">
+    <h2 className="text-4xl font-bold text-center">Technologies We Work With</h2>
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+      {technologies.map((tech, index) => (
+        <div
+          key={index}
+          className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center hover:bg-gray-300 hover:shadow-lg transition duration-200"
+        >
+          <Image src={tech.icon} alt={`${tech.name} Icon`}  width={12} height={12} className="w-12 h-12 mb-2" />
+          <h3 className="font-bold">{tech.name}</h3>
         </div>
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/technologies/javascript-icon.svg"
-            alt="JavaScript Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">JavaScript</h3>
-        </div>
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/icons/typescript-icon.png"
-            alt="TypeScript Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">TypeScript</h3>
-        </div>
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/icons/react-icon.png"
-            alt="React Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">React</h3>
-        </div>
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/icons/nextjs-icon.png"
-            alt="Next.js Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">Next.js</h3>
-        </div>
-        <div className="p-4 bg-gray-200 rounded-lg text-center shadow-md flex flex-col items-center">
-          <img
-            src="/icons/tailwind-icon.png"
-            alt="Tailwind CSS Icon"
-            className="w-12 h-12 mb-2"
-          />
-          <h3 className="font-bold">Tailwind CSS</h3>
-        </div>
-      </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default Technology;
