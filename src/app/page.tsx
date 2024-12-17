@@ -52,9 +52,9 @@ export default function main() {
  
      <Home /> 
      <ServicesCards/>
-     <div className="flex items-center justify-center px-4 mt-4">
-  <span className="text-4xl font-bold text-center text-black max-w-screen-md">
-    The service we offer is designed to meet your business needs.
+     <div className="flex items-center justify-center px-4 mt-8">
+  <span className="text-4xl font-bold text-center text-black max-w-screen-md ">
+    The service we offer is designed  to meet your business needs.
   </span>
 </div>
 <div className="container mx-auto px-6 lg:px-12">
