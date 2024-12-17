@@ -1,4 +1,5 @@
 import About from '@/components/About/About'
+import AboutSection from '@/components/About/AboutSection'
 import React from 'react'
 
 
@@ -7,6 +8,8 @@ const page = () => {
    <>
   
  <About/>
+ <AboutSection/>
+ {/* <Footer/> */}
    </>
   )
 }

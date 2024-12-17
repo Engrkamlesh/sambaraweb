@@ -19,7 +19,7 @@ const Navbar = () => {
     // Example: change text color based on a condition
     const currentPath = window.location.pathname; // This can be dynamic based on your route
     if (currentPath.includes("about")) {
-      setTextColor("text-blue-500"); // Example condition, change based on route
+      setTextColor("text-black"); // Example condition, change based on route
     } else {
       setTextColor("text-white"); // Default color
     }
@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       {/* Brand Section - SAMBARATECH */}
       <Link href="/">
-        <h1 className="font-bold text-2xl  ${textColor} text-center lg:text-left mx-auto lg:mx-0">
+        <h1 className="font-bold text-4xl  ${textColor} text-center lg:text-left mx-auto lg:mx-0">
           SAMBARATECH
         </h1>
       </Link>

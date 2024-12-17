@@ -45,7 +45,7 @@ const About = () => {
   </div>
 
   {/* Bottom Images */}
-  <div className="flex flex-wrap justify-center lg:justify-between mt-8 px-8 space-y-4 lg:space-y-0 lg:space-x-6">
+  <div className="flex flex-wrap justify-center lg:justify-between mt-4 px-8 space-y-4 lg:space-y-0 lg:space-x-6">
     <img
       src="/images/about-image.jpg"
       alt="About Image 1"
