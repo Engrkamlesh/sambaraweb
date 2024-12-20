@@ -9,7 +9,7 @@ const TabsLight: React.FC = () => {
       id: 0,
       label: "Expertise",
       description:
-        "We are a team of international talents with expertise in web design, development, SEO, digital marketing, and branding.",
+        "We are a team of  talents with expertise in web design, development, SEO, digital marketing, and branding.",
       imgSrc:
         "https://www.digitalsilk.com/wp-content/uploads/2023/06/real-estate-website-design-company-Expertise-693x426.jpg",
       imgAlt:
@@ -52,7 +52,7 @@ const TabsLight: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-blue-700 p-4">Our Approach</h1>
+          <h1 className="text-2xl font-bold text-blue-700 p-2">Our Approach</h1>
           <h2 className="text-3xl font-bold text-gray-800">
             How We Deliver Value To Real Estate Businesses
           </h2>
@@ -82,20 +82,20 @@ const TabsLight: React.FC = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="mt-6">
+          <div className="mt-6 px-8 ">
             {tabs.map(
               (tab) =>
                 activeTab === tab.id && (
                   <div
                     key={tab.id}
-                    className="flex flex-col lg:flex-row items-center gap-8"
+                    className="flex flex-col lg:flex-row items-center  px-4 gap-8"
                   >
                     {/* Text Content */}
-                    <div className="lg:w-1/2">
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                    <div className="lg:w-1/2 justify-between">
+                      <h3 className="text-2xl font-bold  text-gray-800  mb-4">
                         {tab.label}
                       </h3>
-                      <p className="text-gray-600 text-lg">{tab.description}</p>
+                      <p className="text-gray-600 text-lg ">{tab.description}</p>
                     </div>
                     {/* Image Content */}
                     <div className="lg:w-1/2">
