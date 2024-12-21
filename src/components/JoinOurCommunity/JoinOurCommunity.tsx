@@ -15,20 +15,20 @@ const JoinOurCommunity = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
         {/* Satisfied Customers */}
         <div className="text-center">
-          <h3 className="text-5xl font-bold text-primary text-blue-500 mb-4">50+</h3>
-          <p className="text-gray-500 font-semibold">Satisfied Customers</p>
+          <h3 className="text-5xl font-bold text-primary text-blue-500 mb-4 justify-center">50+</h3>
+          <p className="text-gray-500 font-semibold justify-center">Satisfied Customers</p>
         </div>
 
         {/* Products */}
         <div className="text-center">
-          <h3 className="text-5xl font-bold text-primary text-blue-500 mb-4">1</h3>
-          <p className="text-gray-500 font-semibold">Products</p>
+          <h3 className="text-5xl font-bold text-primary justify-center text-blue-500 mb-4">3</h3>
+          <p className="text-gray-500 font-semibold justify-center">Products</p>
         </div>
 
         {/* Expert Employees */}
         <div className="text-center">
-          <h3 className="text-5xl font-bold text-primary text-blue-500 mb-4">30+</h3>
-          <p className="text-gray-500 font-semibold">Expert Employees</p>
+          <h3 className="text-5xl font-bold text-primary justify-center text-blue-500 mb-4">30+</h3>
+          <p className="text-gray-500 font-semibold justify-center">Expert Employees</p>
         </div>
       </div>
     </div>

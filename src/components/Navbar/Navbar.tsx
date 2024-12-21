@@ -56,9 +56,11 @@ const Navbar = () => {
         <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
           <button onClick={() => handleClick("insights")}>Insights</button>
         </li>
+        <Link href='/contact'>
         <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
           <button onClick={() => handleClick("contact-us")}>Contact us</button>
         </li>
+        </Link>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -100,9 +102,11 @@ const Navbar = () => {
             <li className={`text-lg tracking-wider font-bold ${textColor}`}>
               <button onClick={() => handleClick("insights")}>Insights</button>
             </li>
+            <Link href='/contact'>
             <li className={`text-lg tracking-wider font-bold ${textColor}`}>
               <button onClick={() => handleClick("contact-us")}>Contact us</button>
             </li>
+            </Link>
           </ul>
         </div>
       </div>

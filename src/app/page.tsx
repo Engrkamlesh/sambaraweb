@@ -1,4 +1,5 @@
 // import Footer from "@/components/Footer/Footer";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
 import ServiceCard from "@/components/Service/OurServices";
@@ -72,6 +73,7 @@ export default function main() {
     </div>
      
       <Technology/>
+      <Contact/>
       {/* <ServicesSection/> */}
    <Footer/> 
      </>
