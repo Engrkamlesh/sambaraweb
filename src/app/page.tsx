@@ -2,6 +2,7 @@
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
+import Insights from "@/components/Insights/Insights";
 import ServiceCard from "@/components/Service/OurServices";
 import ServicesCards from "@/components/Service/ServicesSection";
 import Technology from "@/components/Technology/Technology";
@@ -23,7 +24,7 @@ const servicesData  = [
     title: 'Web Development Services',
     description:
       'SambaraTech stands out as a top-notch app development service company, specializing in tailored website development services. We prioritize creating visually appealing, user-friendly, and reliable websites from concept to launch. Our commitment is to align every aspect of the website with your business objectives and audience expectations, providing a comprehensive digital solution that truly represents your brand essence.',
-    imageSrc: '/services/web.jpg',
+    imageSrc: '/services/ux-ui.jpg',
     features: [
       { icon: 'fas fa-code', text: 'Modern coding practices' },
       { icon: 'fas fa-palette', text: 'Creative UI/UX design' },
@@ -73,7 +74,9 @@ export default function main() {
     </div>
      
       <Technology/>
+      <Insights/>
       <Contact/>
+      
       {/* <ServicesSection/> */}
    <Footer/> 
      </>

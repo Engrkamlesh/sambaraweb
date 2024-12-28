@@ -11,7 +11,7 @@ const TabsLight: React.FC = () => {
       description:
         "We are a team of  talents with expertise in web design, development, SEO, digital marketing, and branding.",
       imgSrc:
-        "https://www.digitalsilk.com/wp-content/uploads/2023/06/real-estate-website-design-company-Expertise-693x426.jpg",
+        "/images/big-buildings.jpg",
       imgAlt:
         "An employee at a real estate website design company points at her computer screen",
     },
@@ -21,7 +21,7 @@ const TabsLight: React.FC = () => {
       description:
         "We design and build optimized websites to help you increase your visibility on search engines as well as grow on-site conversions.",
       imgSrc:
-        "https://www.digitalsilk.com/wp-content/uploads/2023/06/real-estate-website-design-company-optimization-693x426.jpg",
+        "/images/Back.jpg",
       imgAlt:
         "A real estate website design company meeting at a whiteboard",
     },
@@ -31,7 +31,7 @@ const TabsLight: React.FC = () => {
       description:
         "We apply industry best practices to our web design, from intuitive navigation and high-quality images to incorporating testimonials and reviews.",
       imgSrc:
-        "https://www.digitalsilk.com/wp-content/uploads/2023/06/real-estate-website-design-company-best-practices-693x426.jpg",
+        "/images/RealEstate.jpg",
       imgAlt:
         "A real estate web designer discusses a project with two clients",
     },
@@ -41,7 +41,7 @@ const TabsLight: React.FC = () => {
       description:
         "We maintain transparency by providing real-time progress updates, ensuring you’re always in the loop.",
       imgSrc:
-        "https://www.digitalsilk.com/wp-content/uploads/2023/06/real-estate-website-design-company-transparency-693x426.jpg",
+        "/images/RealEstate.jpg",
       imgAlt:
         "A real estate web designer explaining analytics to the client",
     },

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="w-full bg-image h-auto xl:h-auto px-6 md:px-8 lg:px-20 xl:px-28">
       <Navbar />
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
+      <div className="grid lg:grid-cols-2 gap-10 items-center mb-6">
         {/* Section: Text Content */}
         <div className="flex flex-col">
           {/* Heading 1 */}
@@ -46,7 +46,7 @@ const Home = () => {
         {/* Section: Image */}
         <div className="max-lg:mt-12 h-full mt-8 px-2">
           <img
-            src="https://readymadeui.com/analtsis.webp"
+            src="/services/ux-ui.jpg"
             alt="Home"
             className="w-full h-auto object-cover rounded-md shadow"
           />

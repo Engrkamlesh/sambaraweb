@@ -9,7 +9,7 @@ const testimonials = [
     position: "CEO, Company ABC",
     image: "https://via.placeholder.com/50",
     testimonial:
-      "I had a pleasant experience overall and will definitely be coming back for further treatment. The team is very professional.",
+      "I had a pleasant experience overall and will definitely be coming back for application. The team is very professional.",
     rating: 5,
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     position: "Founder, XYZ Corp",
     image: "https://via.placeholder.com/50",
     testimonial:
-      "The service was amazing. The staff were knowledgeable and the environment was very comfortable.",
+      "The service was amazing. Excellent work.",
     rating: 4,
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     position: "Manager, DEF Ltd.",
     image: "https://via.placeholder.com/50",
     testimonial:
-      "Highly recommend this place! I felt very taken care of, and the results were fantastic.",
+      "Highly recommend this place!  and the results were fantastic.",
     rating: 4,
   },
 ];

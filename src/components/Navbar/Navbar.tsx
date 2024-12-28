@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const [textColor, setTextColor] = useState("text-white"); // Default text color
-  
+  const [logoColor,setLogoColor] = useState("text-white");
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,8 +20,11 @@ const Navbar = () => {
     const currentPath = window.location.pathname; // This can be dynamic based on your route
     if (currentPath.includes("about")) {
       setTextColor("text-black"); // Example condition, change based on route
-    } else {
+      setLogoColor("text-black")
+    } 
+    else {
       setTextColor("text-white"); // Default color
+      setLogoColor('text-white');
     }
   }, [window.location.pathname]); // Update on path change
 
@@ -32,7 +35,7 @@ const Navbar = () => {
     >
       {/* Brand Section - SAMBARATECH */}
       <Link href="/">
-        <h1 className="font-bold text-4xl  ${textColor} text-center lg:text-left mx-auto lg:mx-0">
+        <h1 className="font-bold text-4xl   ${logoColor} text-center lg:text-left mx-auto lg:mx-0">
           SAMBARATECH
         </h1>
       </Link>
@@ -56,11 +59,11 @@ const Navbar = () => {
         <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
           <button onClick={() => handleClick("insights")}>Insights</button>
         </li>
-        <Link href='/contact'>
+        
         <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
           <button onClick={() => handleClick("contact-us")}>Contact us</button>
         </li>
-        </Link>
+       
       </ul>
 
       {/* Mobile Menu Button */}
@@ -102,11 +105,11 @@ const Navbar = () => {
             <li className={`text-lg tracking-wider font-bold ${textColor}`}>
               <button onClick={() => handleClick("insights")}>Insights</button>
             </li>
-            <Link href='/contact'>
+           
             <li className={`text-lg tracking-wider font-bold ${textColor}`}>
               <button onClick={() => handleClick("contact-us")}>Contact us</button>
             </li>
-            </Link>
+          
           </ul>
         </div>
       </div>
