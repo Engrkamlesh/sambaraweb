@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const [textColor, setTextColor] = useState("text-white"); // Default text color
-  const [logoColor,setLogoColor] = useState("text-white");
+ 
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,11 +20,11 @@ const Navbar = () => {
     const currentPath = window.location.pathname; // This can be dynamic based on your route
     if (currentPath.includes("about")) {
       setTextColor("text-black"); // Example condition, change based on route
-      setLogoColor("text-black")
+     
     } 
     else {
       setTextColor("text-white"); // Default color
-      setLogoColor('text-white');
+      
     }
   }, [window.location.pathname]); // Update on path change
 
@@ -42,28 +42,37 @@ const Navbar = () => {
 
       {/* Navigation Section - Right Aligned */}
       <ul className="hidden lg:flex gap-8 items-center ml-auto">
-      <Link href='/'>
-        <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
-          <button onClick={() => handleClick("home")}>Home</button> 
-        </li>
-      </Link>
-        <Link href='/about'>
-          <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
+        <Link href="/">
+          <li
+            className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
+          >
+            <button onClick={() => handleClick("home")}>Home</button>
+          </li>
+        </Link>
+        <Link href="/about">
+          <li
+            className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
+          >
             <button onClick={() => handleClick("about-us")}>About us</button>
           </li>
         </Link>
-        <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
-          <button onClick={() => handleClick("services")}>Services</button>
-        </li>
-      
-        <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
-          <button onClick={() => handleClick("insights")}>Insights</button>
-        </li>
-        
-        <li className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}>
-          <button onClick={() => handleClick("contact-us")}>Contact us</button>
-        </li>
-       
+        <Link href="/services">
+          <li
+            className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
+          >
+            <button onClick={() => handleClick("services")}>Services</button>
+          </li>
+        </Link>
+
+        <Link href="/contact-us">
+          <li
+            className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
+          >
+            <button onClick={() => handleClick("contact-us")}>
+              Contact us
+            </button>
+          </li>
+        </Link>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -77,7 +86,7 @@ const Navbar = () => {
         />
       </button>
 
-      {/* Mobile Navigation */} 
+      {/* Mobile Navigation */}
       <div
         className={`bg-transparent lg:hidden w-full h-screen z-[1000] fixed top-0 right-0 ${
           openNav ? "translate-x-0" : "translate-x-full"
@@ -86,30 +95,33 @@ const Navbar = () => {
       >
         <div className="bg-white h-auto w-48 absolute top-20 rounded-2xl right-4 float-end p-4 shadow-2xl">
           <ul className="flex flex-col gap-4 items-start justify-center">
-          <Link href="/">
-            <li className={`text-lg tracking-wider font-bold ${textColor}`}>
-              <button onClick={() => handleClick("home")}>Home</button>
-            </li>
+            <Link href="/">
+              <li className={`text-lg tracking-wider font-bold text-black`}>
+                <button onClick={() => handleClick("home")}>Home</button>
+              </li>
             </Link>
             <Link href="/about">
-              <li className={`text-lg tracking-wider font-bold ${textColor}`}>
-                <button onClick={() => handleClick("about-us")}>About us</button>
+              <li className={`text-lg tracking-wider font-bold text-black`}>
+                <button onClick={() => handleClick("about-us")}>
+                  About us
+                </button>
               </li>
             </Link>
-            <Link href='/services'>
-              <li className={`text-lg tracking-wider font-bold ${textColor}`}>
-                <button onClick={() => handleClick("services")}>Services</button>
+            <Link href="/services">
+              <li className={`text-lg tracking-wider font-bold text-black`}>
+                <button onClick={() => handleClick("services")}>
+                  Services
+                </button>
               </li>
             </Link>
-           
-            <li className={`text-lg tracking-wider font-bold ${textColor}`}>
-              <button onClick={() => handleClick("insights")}>Insights</button>
-            </li>
-           
-            <li className={`text-lg tracking-wider font-bold ${textColor}`}>
-              <button onClick={() => handleClick("contact-us")}>Contact us</button>
-            </li>
-          
+
+            <Link href="/contact-us">
+              <li className={`text-lg tracking-wider font-bold text-black`}>
+                <button onClick={() => handleClick("contact-us")}>
+                  Contact us
+                </button>
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

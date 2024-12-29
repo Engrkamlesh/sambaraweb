@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="w-full bg-image h-auto xl:h-auto px-6 md:px-8 lg:px-20 xl:px-28">
       <Navbar />
-      <div className="grid lg:grid-cols-2 gap-10 items-center mb-6">
+      <div className="grid lg:grid-cols-2 gap-10 items-center">
         {/* Section: Text Content */}
         <div className="flex flex-col">
           {/* Heading 1 */}

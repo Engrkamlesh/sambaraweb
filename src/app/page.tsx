@@ -1,8 +1,6 @@
-// import Footer from "@/components/Footer/Footer";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
-import Insights from "@/components/Insights/Insights";
 import ServiceCard from "@/components/Service/OurServices";
 import ServicesCards from "@/components/Service/ServicesSection";
 import Technology from "@/components/Technology/Technology";
@@ -74,10 +72,9 @@ export default function main() {
     </div>
      
       <Technology/>
-      <Insights/>
       <Contact/>
       
-      {/* <ServicesSection/> */}
+     
    <Footer/> 
      </>
   );

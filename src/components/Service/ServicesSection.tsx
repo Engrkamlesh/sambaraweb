@@ -3,7 +3,7 @@ import React from "react";
 const ServicesCards: React.FC = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-gray-100 py-10 mt-6">
+      <div className="flex justify-center items-center bg-gray-100 py-10">
         <span className="text-4xl text-center font-bold text-gray-800 p-2">
           Our Services 
         </span>
