@@ -9,8 +9,8 @@ const Accordion: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto mt-10 mb-10 bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-xl shadow-md p-6">
-      <h2 className="text-4xl font-bold text-center text-blue-600 mb-6">
+    <div className="w-full max-w-3xl mx-auto mt-10 mb-10 bg-[#725BD9]  rounded-xl shadow-md p-6">
+      <h2 className="text-4xl font-bold text-center text-white mb-6">
         Frequently Asked Questions
       </h2>
 
@@ -108,6 +108,85 @@ const Accordion: React.FC = () => {
         </div>
 
         {/* Accordion Section 3 */}
+        <div className="group">
+          <button
+            type="button"
+            className={`flex items-center justify-between w-full p-5 text-left text-lg font-medium rounded-lg transition-all duration-300 ${
+              openSection === 3
+                ? "bg-blue-100 text-blue-600 shadow-md"
+                : "bg-white text-gray-600 hover:bg-blue-50"
+            }`}
+            onClick={() => toggleSection(3)}
+          >
+            <span>How frequently do you share an update on the process?</span>
+            <svg
+              className={`w-5 h-5 transform transition-transform ${
+                openSection === 3 ? "rotate-180" : ""
+              }`}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
+          {openSection === 3 && (
+            <div className="p-5 bg-white border border-blue-200 rounded-b-lg shadow-inner">
+              <p className="text-gray-700">
+                We use top project management tools to keep you informed. Our
+                team stays in touch, discussing crucial updates and ensuring
+                seamless communication.
+              </p>
+            </div>
+          )}
+        </div>
+
+
+        <div className="group">
+          <button
+            type="button"
+            className={`flex items-center justify-between w-full p-5 text-left text-lg font-medium rounded-lg transition-all duration-300 ${
+              openSection === 3
+                ? "bg-blue-100 text-blue-600 shadow-md"
+                : "bg-white text-gray-600 hover:bg-blue-50"
+            }`}
+            onClick={() => toggleSection(3)}
+          >
+            <span>How frequently do you share an update on the process?</span>
+            <svg
+              className={`w-5 h-5 transform transition-transform ${
+                openSection === 3 ? "rotate-180" : ""
+              }`}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5 5 1 1 5"
+              />
+            </svg>
+          </button>
+          {openSection === 3 && (
+            <div className="p-5 bg-white border border-blue-200 rounded-b-lg shadow-inner">
+              <p className="text-gray-700">
+                We use top project management tools to keep you informed. Our
+                team stays in touch, discussing crucial updates and ensuring
+                seamless communication.
+              </p>
+            </div>
+          )}
+        </div>
+
         <div className="group">
           <button
             type="button"

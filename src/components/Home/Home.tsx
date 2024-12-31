@@ -46,7 +46,7 @@ const Home = () => {
         {/* Section: Image */}
         <div className="max-lg:mt-12 h-full mt-8 px-2">
           <img
-            src="/services/ux-ui.jpg"
+            src="/images/big-buildings.jpg"
             alt="Home"
             className="w-full h-auto object-cover rounded-md shadow"
           />

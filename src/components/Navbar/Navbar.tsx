@@ -35,9 +35,9 @@ const Navbar = () => {
     >
       {/* Brand Section - SAMBARATECH */}
       <Link href="/">
-        <h1 className="font-bold text-4xl   ${logoColor} text-center lg:text-left mx-auto lg:mx-0">
-          SAMBARATECH
-        </h1>
+        <Image src='/logoST.png' alt="logo" width={100} height={100} className="font-bold text-4xl   ${logoColor} text-center lg:text-left mx-auto lg:mx-0"/>
+        
+       
       </Link>
 
       {/* Navigation Section - Right Aligned */}
@@ -61,6 +61,13 @@ const Navbar = () => {
             className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
           >
             <button onClick={() => handleClick("services")}>Services</button>
+          </li>
+        </Link>
+        <Link href="/use-case">
+          <li
+            className={`text-lg tracking-wider font-bold ${textColor} hover:text-red-500`}
+          >
+            <button onClick={() => handleClick("services")}>Case Study</button>
           </li>
         </Link>
 

@@ -21,7 +21,7 @@ const JoinOurCommunity = () => {
 
         {/* Products */}
         <div className="text-center">
-          <h3 className="text-5xl font-bold text-primary justify-center text-blue-500 mb-4">3</h3>
+          <h3 className="text-5xl font-bold text-primary justify-center text-blue-500 mb-4">20</h3>
           <p className="text-gray-500 font-semibold justify-center">Products</p>
         </div>
 
