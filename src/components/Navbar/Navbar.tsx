@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-  const [textColor, setTextColor] = useState("text-white"); // Default text color
+  const [textColor, setTextColor] = useState("text-black"); // Default text color
  
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
@@ -18,12 +18,12 @@ const Navbar = () => {
   useEffect(() => {
     // Example: change text color based on a condition
     const currentPath = window.location.pathname; // This can be dynamic based on your route
-    if (currentPath.includes("about")) {
-      setTextColor("text-black"); // Example condition, change based on route
-     
+    if (currentPath.includes("about") || currentPath.includes("services") || currentPath.includes("contact") 
+      || currentPath.includes("use-case") ) {
+      setTextColor("text-black"); // Example condition, change based on route   
     } 
     else {
-      setTextColor("text-white"); // Default color
+      setTextColor("text-black"); // Default color
       
     }
   }, [window.location.pathname]); // Update on path change
@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       {/* Brand Section - SAMBARATECH */}
       <Link href="/">
-        <Image src='/logoST.png' alt="logo" width={100} height={100} className="font-bold text-4xl   ${logoColor} text-center lg:text-left mx-auto lg:mx-0"/>
+        <Image src='/logoST.png' alt="logo" width={100} height={100} className=" w-full font-bold text-4xl ${logoColor} text-center lg:text-left mx-auto lg:mx-0"/>
         
        
       </Link>

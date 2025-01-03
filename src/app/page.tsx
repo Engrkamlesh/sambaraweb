@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
+import Navbar from "@/components/Navbar/Navbar";
 import ServiceCard from "@/components/Service/OurServices";
 import ServicesCards from "@/components/Service/ServicesSection";
 import Technology from "@/components/Technology/Technology";
@@ -49,7 +50,7 @@ export default function main() {
    
 <>
 
- 
+ <Navbar/>
      <Home /> 
      <ServicesCards/>
      <div className="flex items-center justify-center px-4 mt-8">
@@ -70,11 +71,9 @@ export default function main() {
       ))}
        
     </div>
-     
+    
       <Technology/>
-      <Contact/>
-      
-     
+      <Contact/>  
    <Footer/> 
      </>
   );

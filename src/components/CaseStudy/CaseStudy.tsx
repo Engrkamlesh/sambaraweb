@@ -10,13 +10,13 @@ const CaseStudy = () => {
 
   return (
     <>
-      <section className="p-6 pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
+      <section className="p-4 pt-20 pb-12  lg:pt-[120px] lg:pb-[90px] dark:bg-black">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
                 <span className="text-primary mb-2 block text-lg font-semibold">
-                  Our Portfolio
+                  Case Studies
                 </span>
                 <h2 className="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
                   Our Recent Projects
@@ -29,7 +29,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-wrap justify-center -mx-4">
+          {/* <div className="w-full flex flex-wrap justify-center -mx-4">
             <div className="w-full px-4">
               <ul className="flex flex-wrap justify-center mb-12 space-x-1">
                 <li className="mb-1">
@@ -37,8 +37,8 @@ const CaseStudy = () => {
                     onClick={() => handleProject("all")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "all"
-                        ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
+                        ? "activeClasses bg-primary text-black"
+                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-red-700"
                     }`}
                   >
                     All Projects
@@ -49,8 +49,8 @@ const CaseStudy = () => {
                     onClick={() => handleProject("mobile app")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "mobile app"
-                        ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
+                        ? "activeClasses bg-primary text-black"
+                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-red-700"
                     }`}
                   >
                     Mobile App
@@ -61,8 +61,8 @@ const CaseStudy = () => {
                     onClick={() => handleProject("web app")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "web app"
-                        ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
+                        ? "activeClasses bg-primary text-black"
+                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-red-700"
                     }`}
                   >
                     Web App
@@ -73,8 +73,8 @@ const CaseStudy = () => {
                     onClick={() => handleProject("marketing")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "marketing"
-                        ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
+                        ? "activeClasses bg-primary text-black"
+                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-red-700"
                     }`}
                   >
                     Marketing
@@ -85,8 +85,8 @@ const CaseStudy = () => {
                     onClick={() => handleProject("development")}
                     className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
                       showCard === "development"
-                        ? "activeClasses bg-primary text-white"
-                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-white"
+                        ? "activeClasses bg-primary text-red-700"
+                        : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary hover:text-red-700"
                     }`}
                   >
                     Development
@@ -94,8 +94,8 @@ const CaseStudy = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="flex flex-wrap -mx-4">
+          </div> */}
+          {/* <div className="flex flex-wrap -mx-4">
             <PortfolioCard
               ImageHref="https://i.ibb.co/64WfFPt/image-01.jpg"
               category="mobile app"
@@ -144,7 +144,7 @@ const CaseStudy = () => {
               buttonHref="#"
               showCard={showCard}
             />
-          </div>
+          </div> */}
         </div>
       </section>
     </>
@@ -181,7 +181,7 @@ const PortfolioCard = ({
             <h3 className="text-dark dark:text-white mb-5 text-xl font-bold">{title}</h3>
             <a
               href={buttonHref}
-              className="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+              className="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-blue-800"
             >
               {button}
             </a>

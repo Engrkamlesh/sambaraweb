@@ -147,21 +147,22 @@ const Accordion: React.FC = () => {
           )}
         </div>
 
+        {/* Accordion Section 4 */}
 
         <div className="group">
           <button
             type="button"
             className={`flex items-center justify-between w-full p-5 text-left text-lg font-medium rounded-lg transition-all duration-300 ${
-              openSection === 3
+              openSection === 4
                 ? "bg-blue-100 text-blue-600 shadow-md"
                 : "bg-white text-gray-600 hover:bg-blue-50"
             }`}
-            onClick={() => toggleSection(3)}
+            onClick={() => toggleSection(4)}
           >
             <span>How frequently do you share an update on the process?</span>
             <svg
               className={`w-5 h-5 transform transition-transform ${
-                openSection === 3 ? "rotate-180" : ""
+                openSection === 4 ? "rotate-180" : ""
               }`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -176,7 +177,7 @@ const Accordion: React.FC = () => {
               />
             </svg>
           </button>
-          {openSection === 3 && (
+          {openSection === 4 && (
             <div className="p-5 bg-white border border-blue-200 rounded-b-lg shadow-inner">
               <p className="text-gray-700">
                 We use top project management tools to keep you informed. Our
@@ -187,20 +188,22 @@ const Accordion: React.FC = () => {
           )}
         </div>
 
+        {/* Accordion Section 5 */}
+
         <div className="group">
           <button
             type="button"
             className={`flex items-center justify-between w-full p-5 text-left text-lg font-medium rounded-lg transition-all duration-300 ${
-              openSection === 3
+              openSection === 5
                 ? "bg-blue-100 text-blue-600 shadow-md"
                 : "bg-white text-gray-600 hover:bg-blue-50"
             }`}
-            onClick={() => toggleSection(3)}
+            onClick={() => toggleSection(5)}
           >
             <span>How frequently do you share an update on the process?</span>
             <svg
               className={`w-5 h-5 transform transition-transform ${
-                openSection === 3 ? "rotate-180" : ""
+                openSection === 5 ? "rotate-180" : ""
               }`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -215,7 +218,7 @@ const Accordion: React.FC = () => {
               />
             </svg>
           </button>
-          {openSection === 3 && (
+          {openSection === 5 && (
             <div className="p-5 bg-white border border-blue-200 rounded-b-lg shadow-inner">
               <p className="text-gray-700">
                 We use top project management tools to keep you informed. Our
