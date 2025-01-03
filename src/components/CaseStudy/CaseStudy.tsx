@@ -10,26 +10,27 @@ const CaseStudy = () => {
 
   return (
     <>
-      <section className="p-4 pt-20 pb-12  lg:pt-[120px] lg:pb-[90px] dark:bg-black">
+      <section className="p-4  pb-12  lg:pt-[70px] lg:pb-[90px] ">
         <div className="container mx-auto">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full px-4">
+          <div className="flex flex-wrap mx-6">
+            <div className="w-full px-6">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
                 <span className="text-primary mb-2 block text-lg font-semibold">
                   Case Studies
                 </span>
-                <h2 className="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
+                <h2 className=" mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
                   Our Recent Projects
                 </h2>
-                <p className="text-body-color text-base dark:text-dark-6">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
+                <p className="text-body-color text-base dark:text-dark-8">
+                Our portfolio showcases a diverse range of projects across various industries,  each tailored to meet unique client needs. From conceptualization to execution,
+                  our team has consistently delivered exceptional solutions.
+                 Below, we provide a glimpse into some of our recent work:
                 </p>
               </div>
             </div>
           </div>
 
-          {/* <div className="w-full flex flex-wrap justify-center -mx-4">
+          <div className="w-full flex flex-wrap justify-center -mx-4">
             <div className="w-full px-4">
               <ul className="flex flex-wrap justify-center mb-12 space-x-1">
                 <li className="mb-1">
@@ -94,11 +95,11 @@ const CaseStudy = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
-          {/* <div className="flex flex-wrap -mx-4">
+          </div>
+          <div className="flex flex-wrap -mx-4">
             <PortfolioCard
               ImageHref="https://i.ibb.co/64WfFPt/image-01.jpg"
-              category="mobile app"
+              category="Mobile app"
               title="Mobile App"
               button="View Details"
               buttonHref="#"
@@ -106,7 +107,7 @@ const CaseStudy = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/PT7ghRs/image-06.jpg"
-              category="marketing"
+              category="Marketing"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -114,7 +115,7 @@ const CaseStudy = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/vkt8C1P/image-02.jpg"
-              category="marketing"
+              category="Marketing"
               title="Creative Agency"
               button="View Details"
               buttonHref="#"
@@ -130,7 +131,7 @@ const CaseStudy = () => {
             />
             <PortfolioCard
               ImageHref="https://i.ibb.co/m6dq2fX/image-04.jpg"
-              category="web app"
+              category="Web app"
               title="Web Application"
               button="View Details"
               buttonHref="#"
@@ -144,7 +145,7 @@ const CaseStudy = () => {
               buttonHref="#"
               showCard={showCard}
             />
-          </div> */}
+          </div>
         </div>
       </section>
     </>
@@ -174,11 +175,13 @@ const PortfolioCard = ({
           <div className="overflow-hidden rounded-[10px]">
             <img src={ImageHref} alt="portfolio" className="w-full" />
           </div>
-          <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
+          <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-gray-50 dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
             <span className="text-primary mb-2 block text-sm font-medium">
               {category}
             </span>
-            <h3 className="text-dark dark:text-white mb-5 text-xl font-bold">{title}</h3>
+            <h3 className="text-dark dark:text-white mb-5 text-xl font-bold">
+              {title}
+            </h3>
             <a
               href={buttonHref}
               className="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-blue-800"
