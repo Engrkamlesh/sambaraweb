@@ -102,7 +102,7 @@ const CaseStudy = () => {
               category="Mobile app"
               title="Mobile App"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/6"
               showCard={showCard}
             />
             <PortfolioCard
@@ -110,7 +110,7 @@ const CaseStudy = () => {
               category="Marketing"
               title="Creative Agency"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/4"
               showCard={showCard}
             />
             <PortfolioCard
@@ -118,7 +118,7 @@ const CaseStudy = () => {
               category="Marketing"
               title="Creative Agency"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/3"
               showCard={showCard}
             />
             <PortfolioCard
@@ -126,7 +126,7 @@ const CaseStudy = () => {
               category="Development"
               title="Creative Agency"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/5"
               showCard={showCard}
             />
             <PortfolioCard
@@ -134,7 +134,7 @@ const CaseStudy = () => {
               category="Web app"
               title="Web Application"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/2"
               showCard={showCard}
             />
             <PortfolioCard
@@ -142,7 +142,7 @@ const CaseStudy = () => {
               category="Marketing"
               title="Creative Agency"
               button="View Details"
-              buttonHref="#"
+              buttonHref="/use-case/1"
               showCard={showCard}
             />
           </div>
