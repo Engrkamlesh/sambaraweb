@@ -58,7 +58,7 @@ const Footer = () => {
 <Link
 className="relative inline-flex items-center  rounded-full my-2 justify-center px-6 py-3 text-base font-medium
 text-blue-600 bg-white hover:bg-blue-600 hover:text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-transform transform hover:translate-y-1"
-href="https://sambaratech.com/contact-us"
+href="/contact-us"
 >
 Contact us
 </Link> 
@@ -74,9 +74,9 @@ Contact us
   <div className="grid grid-cols-3 gap-4 p-4  text-white">
   {/* Column 1 */}
   <div className="flex flex-col gap-2">
-    <Link href="#" className="hover:underline font-semibold">Home</Link>
-    <Link href="#" className="hover:underline font-semibold">About</Link>
-    <Link href="#" className="hover:underline font-semibold">Contact</Link>
+    <Link href="/" className="hover:underline font-semibold">Home</Link>
+    <Link href="/about" className="hover:underline font-semibold">About</Link>
+    <Link href="/contact-us" className="hover:underline font-semibold">Contact</Link>
   </div>
 
   {/* Column 2 */}

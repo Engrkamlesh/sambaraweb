@@ -1,10 +1,18 @@
+
+import Footer from '@/components/Footer/Footer'
+import Navbar from '@/components/Navbar/Navbar'
+import ServicesCards from '@/components/Service/ServicesSection'
 import React from 'react'
-import ServicesSection from "@/components/Service/Services"
+
 
 const services = () => {
   return (
    <>
-   <ServicesSection/>
+   {/* <ServicesSection/> */}
+   {/* <OurServices/> */}
+   <Navbar/>
+   <ServicesCards/>
+   <Footer/>
    </>
   )
 }
