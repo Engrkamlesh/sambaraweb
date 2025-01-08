@@ -16,7 +16,7 @@ const technologies = [
 const Technology = () => (
   <div className="flex flex-col items-center space-y-6 mt-10 mb-10">
     <h2 className="text-4xl font-bold text-center">Technologies We Work With</h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 p-4">
       {technologies.map((tech, index) => (
         <div
           key={index}
