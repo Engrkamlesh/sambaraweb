@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import React, { useState } from "react";
 
 const CaseStudy = () => {
@@ -98,53 +99,51 @@ const CaseStudy = () => {
           </div>
           <div className="flex flex-wrap -mx-4">
             <PortfolioCard
+             id="Mobile App"
               ImageHref="https://i.ibb.co/64WfFPt/image-01.jpg"
               category="Mobile app"
               title="Mobile App"
               button="View Details"
-              buttonHref="/use-case/6"
+              buttonHref="/use-case/mobile-app"
               showCard={showCard}
             />
             <PortfolioCard
+            id="Marketing"
               ImageHref="https://i.ibb.co/PT7ghRs/image-06.jpg"
               category="Marketing"
               title="Creative Agency"
               button="View Details"
-              buttonHref="/use-case/4"
+              buttonHref="/use-case/marketing"
               showCard={showCard}
             />
             <PortfolioCard
+            id="Marketing"
               ImageHref="https://i.ibb.co/vkt8C1P/image-02.jpg"
               category="Marketing"
               title="Creative Agency"
               button="View Details"
-              buttonHref="/use-case/3"
+              buttonHref="/use-case/creative-agency"
               showCard={showCard}
             />
             <PortfolioCard
+            id="Development"
               ImageHref="https://i.ibb.co/3FKqS1G/image-03.jpg"
               category="Development"
               title="Creative Agency"
               button="View Details"
-              buttonHref="/use-case/5"
+              buttonHref="/use-case/development"
               showCard={showCard}
             />
             <PortfolioCard
+            id="Web Application"
               ImageHref="https://i.ibb.co/m6dq2fX/image-04.jpg"
               category="Web app"
               title="Web Application"
               button="View Details"
-              buttonHref="/use-case/2"
+              buttonHref="/use-case/web-application"
               showCard={showCard}
             />
-            <PortfolioCard
-              ImageHref="https://i.ibb.co/mCPjBsH/image-05.jpg"
-              category="Marketing"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="/use-case/1"
-              showCard={showCard}
-            />
+           
           </div>
         </div>
       </section>
@@ -182,12 +181,12 @@ const PortfolioCard = ({
             <h3 className="text-dark dark:text-white mb-5 text-xl font-bold">
               {title}
             </h3>
-            <a
+            <Link
               href={buttonHref}
               className="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-blue-800"
             >
               {button}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
