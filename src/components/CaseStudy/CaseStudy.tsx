@@ -108,28 +108,28 @@ const CaseStudy = () => {
               showCard={showCard}
             />
             <PortfolioCard
-            id="Marketing"
+            id="Creative Agency"
               ImageHref="https://i.ibb.co/PT7ghRs/image-06.jpg"
-              category="Marketing"
-              title="Creative Agency"
-              button="View Details"
-              buttonHref="/use-case/marketing"
-              showCard={showCard}
-            />
-            <PortfolioCard
-            id="Marketing"
-              ImageHref="https://i.ibb.co/vkt8C1P/image-02.jpg"
-              category="Marketing"
+              category="Creative Agency"
               title="Creative Agency"
               button="View Details"
               buttonHref="/use-case/creative-agency"
               showCard={showCard}
             />
             <PortfolioCard
+            id="Marketing"
+              ImageHref="https://i.ibb.co/vkt8C1P/image-02.jpg"
+              category="Marketing"
+              title="Social Media Marketing"
+              button="View Details"
+              buttonHref="/use-case/marketing"
+              showCard={showCard}
+            />
+            <PortfolioCard
             id="Development"
               ImageHref="https://i.ibb.co/3FKqS1G/image-03.jpg"
               category="Development"
-              title="Creative Agency"
+              title="Development"
               button="View Details"
               buttonHref="/use-case/development"
               showCard={showCard}
