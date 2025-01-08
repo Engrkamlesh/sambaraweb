@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const TabsLight: React.FC = () => {
@@ -99,9 +100,12 @@ const TabsLight: React.FC = () => {
                     </div>
                     {/* Image Content */}
                     <div className="lg:w-1/2">
-                      <img
+                      <Image
                         src={tab.imgSrc}
                         alt={tab.imgAlt}
+                        width={100}
+                        height={100}
+
                         className="rounded-lg shadow-lg w-full"
                       />
                     </div>

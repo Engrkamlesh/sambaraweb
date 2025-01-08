@@ -121,6 +121,13 @@ const Navbar = () => {
                 </button>
               </li>
             </Link>
+            <Link href="/use-case">
+              <li className={`text-lg tracking-wider font-bold text-black`}>
+                <button onClick={() => handleClick("use-case")}>
+                  Case Study     
+                </button>
+              </li>
+            </Link>
 
             <Link href="/contact-us">
               <li className={`text-lg tracking-wider font-bold text-black`}>
