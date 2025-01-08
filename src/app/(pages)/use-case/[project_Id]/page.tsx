@@ -51,11 +51,11 @@ const ProjectDetails = ({
       id: "marketing",
       name: "Social Media Marketing",
       description:
-        "This project aims to enhance brand awareness and engagement through strategic social media campaigns and content creation.",
+        "This project focuses on leveraging the power of social media to drive brand awareness, audience engagement, and business growth through tailored campaigns and innovative content strategies.",
       List: [
-        "Interactive and intuitive user interface designed with user experience in mind.",
-        "Built using a scalable and modular architecture to adapt to growing business demands.",
-        "Seamless integration with APIs, third-party tools, and modern frameworks.",
+        "Data-driven campaigns designed to maximize audience reach and engagement.",
+        "Custom content creation optimized for various social media platforms.",
+        "Real-time analytics and performance tracking for continuous improvement.",
       ],
       image: "https://i.ibb.co/mCPjBsH/image-05.jpg",
       link: "https://example.com/marketing",
@@ -79,13 +79,13 @@ const ProjectDetails = ({
       description:
         "This project focuses on building scalable, high-performance web and mobile applications using modern technologies, aiming to improve user experience and streamline business processes.",
       List: [
-        "Interactive and intuitive user interface designed with user experience in mind.",
-        "Built using a scalable and modular architecture to adapt to growing business demands.",
-        "Seamless integration with APIs, third-party tools, and modern frameworks.",
+        "Crafted visually stunning designs that captivate and engage users.",
+        "Developed scalable solutions to ensure optimal performance under heavy loads.",
+        "Integrated advanced APIs and tools for seamless workflows and enhanced functionality.",
       ],
       image: "https://i.ibb.co/3FKqS1G/image-03.jpg",
       link: "https://example.com/creative-agency", // Add the actual project link
-    },
+    }
   ];
   console.log("list>>>", list);
 
