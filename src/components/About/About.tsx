@@ -20,13 +20,13 @@ const About = () => {
       </p>
       <div className="mt-6 text-start sm:text-left">
         <a
-          href="/hire-us"
+          href="/contact-us"
           className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition-all mr-4 mb-4 sm:mb-0 inline-block"
         >
           Hire Us
         </a>
         <a
-          href="/faqs"
+          href="/contact-us"
           className="border border-gray-300 text-gray-300 py-2 px-6 rounded-lg hover:border-white hover:bg-white hover:text-black transition-all inline-block"
         >
           FAQs 
