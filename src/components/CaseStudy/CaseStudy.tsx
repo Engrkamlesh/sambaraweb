@@ -153,14 +153,24 @@ const CaseStudy = () => {
 
 export default CaseStudy;
 
-const PortfolioCard = ({
+interface PortfolioCardProps {
+  id: string; // The unique identifier for the card
+  showCard: string; // Indicates which card to show
+  category: string; // The category of the portfolio card
+  ImageHref: string; // The URL for the image
+  title: string; // The title of the portfolio card
+  button: string; // The text displayed on the button
+  buttonHref: string; // The URL the button links to
+}
+
+const PortfolioCard: React.FC<PortfolioCardProps> = ({
   showCard,
   category,
   ImageHref,
   title,
   button,
   buttonHref,
-} : any) => {
+} ) => {
   return (
     <>
       <div
