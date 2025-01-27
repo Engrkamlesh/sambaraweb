@@ -33,11 +33,12 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState<number | null >(null);
 
-  const handleClick = (id) => {
+  const handleClick = (id:number) => {
     setSelectedCard(id); // Set the clicked card's ID to apply a click effect
   };
+  
 
   return (
     <section className="bg-blue-950 text-white py-12">

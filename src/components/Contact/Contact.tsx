@@ -5,7 +5,7 @@ const ContectSection = () => {
     <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl mb-8 bg-white font-[sans-serif] mt-10">
     <div>
         <h1 className="text-gray-800 text-3xl font-extrabold">Lets Talk</h1>
-        <p className="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
+        <p className="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out we{"'"}d love to hear about your project  and provide help.</p>
 
         <div className="mt-12">
             <h2 className="text-gray-800 text-base font-bold">Email</h2>
@@ -72,7 +72,7 @@ const ContectSection = () => {
             className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
         <input type='text' placeholder='Subject'
             className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
-        <textarea placeholder='Message' rows="6"
+        <textarea placeholder='Message' rows={6}
             className="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"></textarea>
         <button type='button'
             className="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>

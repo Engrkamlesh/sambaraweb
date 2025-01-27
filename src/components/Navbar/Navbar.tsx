@@ -16,17 +16,22 @@ const Navbar = () => {
 
   // Use this effect to set the textColor based on some condition
   useEffect(() => {
-    // Example: change text color based on a condition
-    const currentPath = window.location.pathname; // This can be dynamic based on your route
-    if (currentPath.includes("about") || currentPath.includes("services") || currentPath.includes("contact") 
-      || currentPath.includes("use-case") ) {
-      setTextColor("text-black"); // Example condition, change based on route   
-    } 
-    else {
-      setTextColor("text-black"); // Default color
-      
+    // Ensure this code runs only on the client
+    if (typeof window !== "undefined") {
+      const currentPath = window.location.pathname;
+      if (
+        currentPath.includes("about") ||
+        currentPath.includes("services") ||
+        currentPath.includes("contact") ||
+        currentPath.includes("use-case")
+      ) {
+        setTextColor("text-black"); // Example condition
+      } else {
+        setTextColor("text-black"); // Default color
+      }
     }
-  }, [window.location.pathname]); // Update on path change
+  }, []);// Update on path change
+
 
   return (
     <div

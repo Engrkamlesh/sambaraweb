@@ -1,17 +1,16 @@
-import { list } from "postcss";
 
-const ProjectDetails = ({
-  params,
-  searchParams,
-}: {
-  params: { project_Id: string };
-  searchParams: { id: string };
-}) => {
-  // Get the projectId from params
-  const { project_Id } = params;
-  console.log("project>>>>Id", project_Id);
+type tParams = Promise<{ project_Id: string }>;
+// The page component will automatically receive `params` from the dynamic route
+const ProjectDetails  = async ({ params }: { params: tParams }) => {
+  console.log("params===", await params);
+  
+  const { project_Id } = await params;
+  // const project_Id = "1";
+  // console.log("slug======", slug);
+  
+  
 
-  // Example data
+  // Example project data
   const projects = [
     {
       id: "mobile-app",
@@ -87,14 +86,12 @@ const ProjectDetails = ({
       link: "https://example.com/creative-agency", // Add the actual project link
     }
   ];
-  console.log("list>>>", list);
 
-  // Find the project by the projectId from params
   const project = projects.find((p) => p.id === project_Id);
 
   if (!project) {
     return (
-      <div className="container mx-auto  p-6">
+      <div className="container mx-auto p-6">
         <h1 className="text-2xl font-bold text-red-600">Project Not Found</h1>
       </div>
     );
@@ -103,27 +100,15 @@ const ProjectDetails = ({
   return (
     <div className="bg-gray-100 py-20 min-h-screen">
       <div className="container mx-auto p-6 px-8 bg-white rounded-lg shadow-lg">
-        {/* Project Heading */}
-        <h1 className="text-4xl font-extrabold text-center text-blue-700 mb-8">
-          {project.name}
-        </h1>
-
+        <h1 className="text-4xl font-extrabold text-center text-blue-700 mb-8">{project.name}</h1>
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-          {/* Description and Details */}
-
           <div className="md:w-1/2 space-y-6">
-            <p className="text-lg text-gray-800 leading-relaxed">
-              {project.description}
-            </p>
+            <p className="text-lg text-gray-800 leading-relaxed">{project.description}</p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              {Array.isArray(project.List) &&
-                project.List.map((item: string, index: number) => (
-                  <li key={index} className="text-base">
-                    {item}
-                  </li>
-                ))}
+              {project.List.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-
             <a
               href={project.link}
               target="_blank"
@@ -133,8 +118,6 @@ const ProjectDetails = ({
               Learn more
             </a>
           </div>
-
-          {/* Project Image */}
           <div className="md:w-1/3">
             <img
               src={project.image}
