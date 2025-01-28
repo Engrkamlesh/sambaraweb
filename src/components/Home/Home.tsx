@@ -43,7 +43,7 @@ const Home = () => {
         </div>
 
         {/* Section: Image */}
-        <div className="max-lg:mt-12 h-full mt-8 px-2">
+        <div className="hidden lg:block max-lg:mt-12 h-full mt-8 px-2">
           <img
             src="/images/big-buildings.jpg"
             alt="Home"
