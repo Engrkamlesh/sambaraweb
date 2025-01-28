@@ -7,9 +7,9 @@ const technologies = [
   { name: 'React', icon: '/technologies/react-icon.svg' },
   { name: 'Next.js', icon: '/technologies/nextjs-icon.svg' },
   { name: 'Flutter', icon: '/technologies/flutter-icon.svg' },
-  { name: 'Sql', icon: '/technologies/Sql.svg' },
+  { name: 'Sql', icon: '/technologies/sql.svg' },
   { name: 'Mongose', icon: '/technologies/mongodb.svg' },
-  { name: 'NodeJs', icon: '/technologies/nodeJs.svg' },
+  { name: 'NodeJs', icon: '/technologies/nodeJS.svg' },
   { name: 'ExpressJs', icon: '/technologies/express.svg' },
 ];
 
