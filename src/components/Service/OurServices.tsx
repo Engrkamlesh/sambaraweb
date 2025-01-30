@@ -38,17 +38,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc,
           <h3 className="text-3xl font-semibold mb-4 text-center">{title}</h3>
           {/* Description */}
           <p className="text-lg leading-relaxed text-blueGray-500 mb-6">{description}</p>
-          {/* Features List */}
-          {/* <ul className="list-none space-y-4">
-            {features.map((feature, index) => (
-              <li key={index} className="flex items-center space-x-4">
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">
-                  <i className={feature.icon}></i>
-                </span>
-                <h4 className="text-blueGray-500">{feature.text}</h4>
-              </li>
-            ))}
-          </ul> */}
+          
         </div>
       </div>
 
