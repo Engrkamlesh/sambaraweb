@@ -7,7 +7,7 @@ const testimonials = [
     id: 1,
     name: "John Doe",
     position: "CEO, Company ABC",
-    image: "https://via.placeholder.com/50",
+    image: "/images/profile.svg",
     testimonial:
       "I had a pleasant experience overall and will definitely be coming back for application. The team is very professional.",
     rating: 5,
@@ -16,7 +16,7 @@ const testimonials = [
     id: 2,
     name: "Jane Smith",
     position: "Founder, XYZ Corp",
-    image: "https://via.placeholder.com/50",
+    image: "/images/profile.svg",
     testimonial:
       "The service was amazing. Excellent work.",
     rating: 4,
@@ -25,9 +25,9 @@ const testimonials = [
     id: 3,
     name: "Michael Johnson",
     position: "Manager, DEF Ltd.",
-    image: "https://via.placeholder.com/50",
+    image: "/images/profile.svg",
     testimonial:
-      "Highly recommend this place!  and the results were fantastic.",
+      "Highly recommend this place, professional working enviorment!  and the results were fantastic.",
     rating: 4,
   },
 ];
